@@ -1,0 +1,43 @@
+page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    height: 330rpx;
+    width: 330rpx;
+    margin-top: auto;
+    margin-bottom: 7vh;
+    border-radius: 50%;
+    background-color: azure;
+    box-shadow: 0px 0px 23px 5px rgba(37, 37, 39, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:active {
+    height: 335rpx;
+    width: 335rpx;
+    background-color: rgba(240, 255, 255, 0.8);
+    box-shadow: 0px 0px 23px 13px rgba(37, 37, 39, 0.2);
+}
+
+.btn-txt {
+    font-size: 1.6rem;
+    color: #1296DB;
+}
+
+.wifi-txt {
+    font-size: 1rem;
+    color: #1295db83;
+}
+
+.cs-area {
+    margin-bottom: 1vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}

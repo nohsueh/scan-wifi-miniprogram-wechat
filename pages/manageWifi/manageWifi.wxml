@@ -1,0 +1,18 @@
+<view>
+    <view class="operate-area">
+        <view class="search-area">
+            <input placeholder="搜索" confirm-type="search" bindconfirm="searchWifi">搜索</input>
+        </view>
+        <view class="btn-add" bind:tap="onMakeWifiTap">
+            <text>新增</text>
+        </view>
+    </view>
+    <scroll-view class="scroll-area" scroll-y type="list" refresher-enabled="{{true}}" bindrefresherrefresh="refreshWifi" enhanced="{{true}}" refresher-triggered="{{refreshStatus}}">
+        <block wx:for="{{wifi}}" wx:key="wifiId">
+            <view class="scroll-item" data-wifi-id="{{item.wifiId}}" data-ssid="{{item.ssid}}" bind:tap="onWifiCardTap" bind:longpress="onLongPressItem">
+                <text style="color: #dff6ff;">👉查看 <text style="color:snow;">{{item.ssid}}</text> 详情</text>
+            </view>
+        </block>
+        <view class="scroll-footer"></view>
+    </scroll-view>
+</view>

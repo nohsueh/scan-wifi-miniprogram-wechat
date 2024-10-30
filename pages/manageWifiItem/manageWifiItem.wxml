@@ -1,0 +1,22 @@
+<!--pages/manageWifiItem.wxml-->
+<view class="page-header"></view>
+<view style="display: flex; align-items: center; flex-direction: column;">
+    <image src="{{qrCodeUrl}}" mode="aspectFit" show-menu-by-longpress="{{true}}" />
+    <text>保存 WiFi 码，扫码即可连接“{{ssid}}”</text>
+</view>
+<form catchsubmit="formSubmit">
+    <view class="form-item">
+        <text class="title">WiFi 名称</text>
+        <input class="input" type="text" name="ssid" value="{{ssid}}" />
+    </view>
+    <view class="form-item">
+        <text class="title">WiFi 密码</text>
+        <input class="input" type="text" name="password" value="{{password}}" />
+    </view>
+    <view>
+        <button class="btn-submit" formType="submit">提交</button>
+    </view>
+    <view class="footer">
+        上次修改时间：{{updatedAt}}
+    </view>
+</form>

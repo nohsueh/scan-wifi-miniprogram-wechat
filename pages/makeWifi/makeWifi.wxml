@@ -1,0 +1,15 @@
+<!--pages/makeWifi/makeWifi.wxml-->
+<view class="page-header"></view>
+<form catchsubmit="formSubmit">
+    <view class="form-item">
+        <text class="title">WiFi 名称</text>
+        <input class="input" type="text" name="ssid" value="{{ssid}}" />
+    </view>
+    <view class="form-item">
+        <text class="title">WiFi 密码</text>
+        <input class="input" type="text" name="password" value="{{password}}" />
+    </view>
+    <view>
+        <button class="btn-submit" formType="submit">提交</button>
+    </view>
+</form>

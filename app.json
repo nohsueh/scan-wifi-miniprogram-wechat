@@ -1,0 +1,34 @@
+{
+    "pages": [
+        "pages/connectWifi/connectWifi",
+        "pages/manageWifi/manageWifi",
+        "pages/manageWifiItem/manageWifiItem",
+        "pages/makeWifi/makeWifi"
+    ],
+    "window": {
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "一键连接 WiFi，生成 WiFi 码",
+        "navigationBarBackgroundColor": "#ffffff"
+    },
+    "tabBar": {
+        "selectedColor": "#1296DB",
+        "list": [
+            {
+                "pagePath": "pages/connectWifi/connectWifi",
+                "text": "WiFi",
+                "iconPath": "assets/icons/wifi.png",
+                "selectedIconPath": "assets/icons/wifi-selected.png"
+            },
+            {
+                "pagePath": "pages/manageWifi/manageWifi",
+                "text": "我是商家",
+                "iconPath": "assets/icons/mine.png",
+                "selectedIconPath": "assets/icons/mine-selected.png"
+            }
+        ]
+    },
+    "style": "v2",
+    "componentFramework": "glass-easel",
+    "sitemapLocation": "sitemap.json",
+    "lazyCodeLoading": "requiredComponents"
+}

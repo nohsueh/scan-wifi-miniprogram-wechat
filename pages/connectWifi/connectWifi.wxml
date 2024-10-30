@@ -1,0 +1,10 @@
+<view class="container">
+    <view class="btn" bindtap="onConnectWifi">
+        <text class="btn-txt">{{buttonText}}</text>
+        <text class="wifi-txt">{{wifi.ssid}}</text>
+    </view>
+    <view class="cs-area">
+        <text>👇长按添加后台微信</text>
+        <image src="../../assets/weixin/wehsueh.png" mode="aspectFit" show-menu-by-longpress="{{true}}" />
+    </view>
+</view>
