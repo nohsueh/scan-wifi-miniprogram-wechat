@@ -12,7 +12,7 @@
         {
           "name": "pages/connectWifi/connectWifi",
           "pathName": "pages/connectWifi/connectWifi",
-          "query": "wifiId=WIFI20241029000129",
+          "query": "wifiId=WIFI20241030000159",
           "launchMode": "default",
           "scene": null
         }

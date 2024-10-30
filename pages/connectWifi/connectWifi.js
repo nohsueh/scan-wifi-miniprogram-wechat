@@ -17,13 +17,10 @@ Component({
     methods: {
 
         async onLoad(query) {
+            const that = this
             try {
-                const that = this
-
-                // const scene = decodeURIComponent(query.scene)
-                // const wifiId = scene.substring(7)
-                const wifiId = query.wifiId
-                console.log(query);
+                const scene = decodeURIComponent(query.scene)
+                const wifiId = scene.substring(7)
                 that.setData({
                     wifiId: wifiId
                 })
@@ -34,6 +31,12 @@ Component({
                     }
                 })
                 if (http.isFailure(res)) {
+                    console.error(res);
+                    that.setData({
+                        wifi: {
+                            ssid: "请使用对应WiFi码"
+                        }
+                    })
                     throw new Error(res)
                 }
                 that.setData({
@@ -42,7 +45,6 @@ Component({
                         password: res.data.data[0].password
                     }
                 })
-                console.log(that.data.wifi)
 
                 await wxp.startWifi()
 
