@@ -1,6 +1,6 @@
 # 共享 WiFi，扫码连接 WiFi 小程序， 生成管理 WiFi 码
 
-![WiFi 扫扫](images\qrCode.jpg)
+![WiFi 扫扫](images/qrCode.jpg)
 
 ## 功能
 
